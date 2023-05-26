@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MENIU</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    ntegrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+
+        <a href="index.html" class="logo"><i class="fa-solid fa-pizza-slice"></i>Crustopia.</a>
+    
+        <nav class="navbar">
+            <a class="active" href="index.html">home</a>
+            <a href="#dishes">dishes</a>
+            <a href="#about">about</a>
+            <a href="menu.html">menu</a>
+            <a href="#review">review</a>
+            <a href="#order">order</a>
+        </nav>
+    
+        <div class="icons">
+            <i class="fa-solid fa-bars" id="menu-bars"></i>
+            <i class="fas fa-search" id="search-icon"></i>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-shopping-cart"></a>
+        </div>
+    
+    </header>
+    <!-- sfarsitul sectiunii header -->
+    
+    <!-- search form-->
+    <form action="" id="search-form">
+        <input type="search" placeholder="type here..." name="" id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+        <i class="fas fa-times" id="close"></i>
+    </form>
+    <section class="menu" id="menu">
+
+        <h3 class="sub-heading">our menu</h3>
+        <h1 class="heading">why choose us?</h1>
+    
+        <div class="box-container">
+    
+            <div class="box">
+                <div class="image">
+                    <img src="images/2.png" alt="">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <h3>Mario</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi nulla aliquam quo.</p>
+                    <a href="#" class="btn" onclick="addToCart('Mario', 90)">add to cart</a>
+                    <span class="price">90 MDL</span>
+                </div>
+            </div>
+    
+            <div class="box">
+                <div class="image">
+                    <img src="images/3.png" alt="">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <h3>Rancho</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi nulla aliquam quo.</p>
+                    <a href="#" class="btn" onclick="addToCart('Rancho', 100)">add to cart</a>
+                    <span class="price">100 MDL</span>
+                </div>
+            </div>
+    
+            <div class="box">
+                <div class="image">
+                    <img src="images/4.png" alt="">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <h3>Capricioasa</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi nulla aliquam quo.</p>
+                    <a href="#" class="btn" onclick="addToCart('Capricioasa', 120)">add to cart</a>
+                    <span class="price">120 MDL</span>
+                </div>
+            </div>
+    
+            <div class="box">
+                <div class="image">
+                    <img src="images/5.png" alt="">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <h3>Margherita</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi nulla aliquam quo.</p>
+                    <a href="#" class="btn" onclick="addToCart('Margherita', 85)">add to cart</a>
+                    <span class="price">85 MDL</span>
+                </div>
+            </div>
+    
+            <div class="box">
+                <div class="image">
+                    <img src="images/6.png" alt="">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <h3>Quattro Formaggi</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi nulla aliquam quo.</p>
+                    <a href="#" class="btn" onclick="addToCart('Quattro Formaggi',125)">add to cart</a>
+                    <span class="price">125 MDL</span>
+                </div>
+            </div>
+    
+            <div class="box">
+                <div class="image">
+                    <img src="images/8.png" alt="">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <h3>BBQ</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi nulla aliquam quo.</p>
+                    <a href="#" class="btn" onclick="addToCart('BBQ', 100)">add to cart</a>
+                    <span class="price">100 MDL</span>
+                </div>
+            </div>
+        </div>
+    
+    </section>
+        
+        <section class="footer">
+
+                <div class="box-container">
+            
+                    <div class="box">
+                        <h3>locations</h3>
+                        <a href="#">str. florii 22</a>
+                        <a href="#">str. florii 22</a>
+                        <a href="#">str. florii 22</a>
+                        <a href="#">str. florii 22</a>
+                    </div>
+            
+                    <div class="box">
+                        <h3>quick links</h3>
+                        <a href="index.html">home</a>
+                        <a href="#">dishes</a>
+                        <a href="#">about</a>
+                        <a href="menu.html">menu</a>
+                        <a href="#">review</a>
+                        <a href="#">order</a>
+                    </div>
+            
+                    <div class="box">
+                        <h3>contact info</h3>
+                        <a href="#">(+373)68666666</a>
+                        <a href="#">(+373)68777777</a>
+                        <a href="#">contact@crustopia.md</a>
+                        <a href="#">info@crustopia.md</a>
+                        <a href="#">Chisinau, Moldova - 4015</a>
+                    </div>
+            
+                    <div class="box">
+                        <h3>follow us</h3>
+                        <a href="#">facebook</a>
+                        <a href="#">instagram</a>
+                        <a href="#">twitter</a>
+                        <a href="#">linkedin</a>
+                    </div>
+            
+                </div>
+            
+                <div class="credit">copyright &copy; 2023 by <span>GRIGORIU MAIRUS</span></div>
+            
+            </section>
+
+            <script src="js/script.js"></script>
+</body>
+</html>
